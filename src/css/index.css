@@ -18,12 +18,13 @@ header{
     border-radius: 0px 0px 10px 5px;
     position: relative;
     height: 14.5vh;
+    width: 100vw;
 }
 
 header > img{
-    padding: 10px 0px 10px 10px;
     position: absolute;
-
+    padding-left: 15px;
+    height: 100%;
 }
 
 header > nav{
@@ -31,7 +32,6 @@ header > nav{
     flex: 1;
     justify-content: center;
     gap: 20px;
-    padding-right: 60px;
 }
 
 header > nav > a{
@@ -40,39 +40,69 @@ header > nav > a{
     font-weight: bolder;
 }
 
+@media (max-width:1100px){
+
+    header > img{
+        position: static;
+        padding-right: 4px;
+    }
+    header{
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+    }
+}
+
+@media (max-width:545px){
+
+    header > img{
+        position: static;
+        padding-bottom: 10px;
+    }
+    header{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    
+
+}
+
 main{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     flex-direction: column;
     flex: 1;
+    width: 100vw;
+    align-items: center;
 }
 
 main > img{
+    width: 72%;
     height: auto;
-    width: 82vw;
-    padding-top: 10px;
+    padding-top: 1%;
 }
 
-@media (min-width: 1730px){
-    main > img {
-        width:75vw;
-    }    
+@media  (max-width:950px){
+    main > img{
+        width: 80%;
+        padding-top: 2%;
+    }
 }
-
-
 
 main > p{
     text-align: center;
     font-weight: bolder;
-    padding-top: 15px;
+    padding: 1% 1% 0.5% 1%;
 
 }
 
 footer{
     background-color: var(--cor2);
     display: flex;
+    width: 100vw;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer > div#Redes{
@@ -82,8 +112,29 @@ footer > div#Redes{
     padding-left: 15px;
     align-items: center;
     gap: 5px;
+    flex-wrap: wrap;
+
 }
 
 footer > img{
     padding-right: 50px;
+}
+
+@media (max-width: 500px){
+    footer > div#Redes{
+        padding-left: 0;
+    }
+
+    footer > img{
+        padding-right: 0;
+    }
+
+    footer{
+        justify-content: space-around;
+        gap: 10px;
+    }
+    
+    
+
+    
 }
