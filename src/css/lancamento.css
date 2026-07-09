@@ -19,6 +19,8 @@ header{
 
 header > img{
     padding: 10px 0px 10px 10px;
+    width: 10%;
+    height: 10%;
 }
 
 header > nav{
@@ -35,8 +37,46 @@ header > nav > a{
     font-weight: bolder;
 }
 
-iframe {
-    width: 100vw;
-    height: 50vh;
-    padding-top: 10px;
+#video{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#video > iframe {
+    width: 30%; 
+    aspect-ratio: 16 / 9;  
+}
+
+#carros{
+    width: 100%;
+    display: flex;
+    background-color: blueviolet;
+    justify-content: center;
+    gap: 4px;
+}
+
+#carros > img{
+    width: 10%;
+    height: auto;
+}
+
+footer{
+    background-color: var(--cor2);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > div#Redes{
+    display: flex;
+    color: white;
+    font-weight: bolder;
+    padding-left: 15px;
+    align-items: center;
+    gap: 5px;
+}
+
+footer > img{
+    padding-right: 50px;
 }
