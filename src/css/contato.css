@@ -1,0 +1,140 @@
+:root{
+    --cor1: #1351d8;
+    --cor2: #1b357e;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 10px 5px;
+    position: relative;
+    height: 14.5vh;
+}
+
+header > img{
+    padding: 10px 0px 10px 10px;
+    position: absolute;
+}
+
+header > nav{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 60px;
+}
+
+header > nav > a{
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bolder;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > section#imagem > img{
+    margin-bottom: 33vh;
+}
+
+main > section#formulario{
+    display: flex;
+    margin-bottom: 190px;
+}
+
+section#formulario > form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form > p{
+    font-weight: bolder;
+}
+
+form > input.inputs{
+    width: 19vw;
+    height: 4vh;
+    border-radius: 10px;
+    border: 2px solid gray
+}
+
+form > input#Enviar{
+    background-color: var(--cor1);
+    width: 12vw;
+    height: 4.5vh;
+    border-radius: 10px;
+    margin-left: 142px;
+    color: white;
+    border: 2px solid var(--cor1)
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: var(--cor2);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > div#Redes{
+    display: flex;
+    color: white;
+    font-weight: bolder;
+    padding-left: 15px;
+    align-items: center;
+    gap: 5px;
+}
+
+footer > img{
+    padding-right: 50px;
+}
