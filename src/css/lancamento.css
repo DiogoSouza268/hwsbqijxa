@@ -6,6 +6,7 @@
 body{
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 header{
@@ -15,12 +16,13 @@ header{
     justify-content: flex-start;
     box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.5);
     border-radius: 0px 0px 10px 5px;
+    position: relative;
+    height: 14.5vh;
 }
 
 header > img{
     padding: 10px 0px 10px 10px;
-    width: 10%;
-    height: 10%;
+    position: absolute;
 }
 
 header > nav{
@@ -37,28 +39,33 @@ header > nav > a{
     font-weight: bolder;
 }
 
+main{
+    flex: 1;
+}
 #video{
     background-color: black;
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 #video > iframe {
-    width: 30%; 
+    width: 45%;
+    height: auto; 
     aspect-ratio: 16 / 9;  
 }
 
 #carros{
     width: 100%;
     display: flex;
-    background-color: blueviolet;
     justify-content: center;
     gap: 4px;
 }
 
 #carros > img{
-    width: 10%;
+    width: 15%;
+    padding-top: 15px;
     height: auto;
 }
 
