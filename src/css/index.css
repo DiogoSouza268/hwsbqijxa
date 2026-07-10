@@ -128,15 +128,58 @@ footer > p{
 
 @media (max-width: 500px){
     footer > div#Redes{
-        padding-left: 0;
+        padding: 0;
     }
 
     footer > img{
-        padding-right: 0;
+        padding: 0;
+    }
+
+    footer > p{
+        padding: 0;
+        text-align: center;
     }
 
     footer{
         justify-content: space-around;
-        gap: 10px;
+    }
+}
+
+@media (max-width:1006px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }    
+
+    footer > div#Redes{
+        padding: 10px 0px 15px 0px;
+    }
+
+    footer > p{
+        padding: 10px 0px 15px 0px;
+    }
+
+    footer > img{
+        padding: 10px 0px 15px 0px;
+    }
+}
+
+@media (max-width:1543px){
+    footer{
+        gap: 22%;
+    }
+}
+
+@media (max-width:1360px){
+    footer{
+        gap: 17%;
+    }
+}
+
+@media (max-width:1150px){
+    footer{
+        gap: 13%;
     }
 }
