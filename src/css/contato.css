@@ -136,7 +136,7 @@ footer{
     width: 100vw;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 23%;
+    gap: 26%;
 }
 
 footer > div#Redes{
@@ -167,58 +167,4 @@ footer > p{
         justify-content: space-around;
         gap: 10px;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer{
-    background-color: var(--cor2);
-    display: flex;
-    justify-content: space-between;
-}
-
-footer > div#Redes{
-    display: flex;
-    color: white;
-    font-weight: bolder;
-    padding-left: 15px;
-    align-items: center;
-    gap: 5px;
-}
-
-footer > img{
-    padding-right: 50px;
 }
