@@ -95,8 +95,45 @@ section#carros{
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 4px;
+    gap: 30px;
 }
+
+#danese{
+    display: flex;
+    background-color: chartreuse;
+    width: 45%;
+    justify-content: space-between;
+}
+
+.modelos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.modelos > img{
+    width: 70%;
+}
+
+.descricao{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+} 
+
+.modeloEpreco{
+    display: flex;
+    flex-direction: column;
+    color: #1351d8;
+    font-size: 13px;
+    
+}
+
+
+
+
+
 
 @media (max-width:900px) {
     section#carros{
