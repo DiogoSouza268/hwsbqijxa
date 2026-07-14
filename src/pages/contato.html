@@ -26,16 +26,18 @@
         <section id="formulario">
             <form>
                 <p>Sobre Você:</p>
-                <input type="text" placeholder="Nome Do Usuario*" class="inputs">
-                <input type="email" placeholder="E-mail Para Contato*" class="inputs">
-                <input type="number" placeholder="Telefone*" class="inputs">
-                <input list="Contatos" id="Contato" name="Contato" placeholder="Tipo De Contato*" class="inputs">
-                <datalist id="Contatos">
-                    <option value="Elogio">
-                    <option value="Reclamação">
-                    <option value="Solicitação">
-                </datalist>
-                <input type="text" placeholder="Insira Uma Mensagem*" class="inputs">
+                <input type="text" placeholder="Nome Do Usuario*" class="inputs" required>
+                <input type="email" placeholder="E-mail Para Contato*" class="inputs" required>
+                <input type="number" placeholder="Telefone*" class="inputs" required>
+                
+                <select id="select" class="inputs" required>
+                    <option selected disabled hidden>Tipo De Contato*</option>
+                    <option>Elogio</option>
+                    <option>Reclamação</option>
+                    <option>Solicitação</option>
+                </select>
+
+                <textarea placeholder="Insira Uma Mensagem*" class="inputs" id="textarea"></textarea>
                 <input type="submit" value="Enviar" id="Enviar">
             </form>
         </section>
