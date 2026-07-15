@@ -89,10 +89,22 @@ main{
 main > a{
     display: flex;
     justify-content: center;
-    width: 68.4%;
+    width: 79.5%;
     padding-top: 30px;
-    max-width: 1200px;
     box-sizing: border-box;
+}
+
+@media (max-width:1300px){
+    main > a{
+        width: 64.5%;
+    }
+}
+
+@media (max-width: 700px) {
+    main > a{
+        width:70%;
+    }
+    
 }
 
 main > a > img{
