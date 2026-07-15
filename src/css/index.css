@@ -19,7 +19,6 @@ header{
     position: relative;
     height: 14.5vh;
     width: 100%;
-    margin-bottom: 30px;
 }
 
 header > img{
@@ -91,9 +90,9 @@ main > a{
     display: flex;
     justify-content: center;
     width: 68.4%;
+    padding-top: 30px;
     max-width: 1200px;
     box-sizing: border-box;
-    background-color: brown;
 }
 
 main > a > img{
@@ -115,7 +114,7 @@ footer{
     width: 100%;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 24%;
+    gap: 26%;
     padding: 6px 0px;
 }
 
