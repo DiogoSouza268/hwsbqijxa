@@ -41,6 +41,11 @@ header > nav > a{
     font-weight: bolder;
 }
 
+header > nav > a:hover {
+    color: var(--cor2); 
+    transform: scale(1.1); 
+}
+
 @media (max-width:1100px){
 
     header > img{
@@ -85,7 +90,7 @@ main{
 main > a{
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 68.4%;
     max-width: 1200px;
     box-sizing: border-box;
     background-color: brown;
@@ -102,7 +107,6 @@ main > p{
     text-align: center;
     font-weight: bolder;
     padding: 15px 10px 15px 10px;
-
 }
 
 footer{
@@ -112,6 +116,7 @@ footer{
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 24%;
+    padding: 6px 0px;
 }
 
 footer > div#Redes{
@@ -121,6 +126,12 @@ footer > div#Redes{
     align-items: center;
     gap: 5px;
     flex-wrap: wrap;
+    padding-left: 5px;
+}
+
+footer > img{
+    padding-right: 5px;
+    
 }
 
 footer > p{
@@ -148,7 +159,7 @@ footer > p{
     }
 }
 
-@media (max-width:1006px) {
+@media (max-width:1014px) {
     footer {
         display: flex;
         flex-direction: column;
